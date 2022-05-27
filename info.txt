@@ -1,0 +1,17 @@
+npm init
+npm install
+npm install gulp-clean-css --save-dev
+npm install --save-dev gulp-uglify
+npm i readable-stream
+npm install --save-dev gulp-imagemin
+npm install --save-dev gulp-autoprefixer
+npm install --save-dev browser-sync
+npm install --save-dev gulp-sass
+npm install --save-dev gulp-rename
+
+git config --global user.name odilovzafarzhon
+git config --global user.email <???>
+git init
+///git remove .....  подключение к удаленному репозиторию
+git push -u origin master
+git clone .... клонирование

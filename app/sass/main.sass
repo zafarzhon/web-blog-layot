@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,700;1,400&display=swap')
+@import 'nullstyle'
+
+.wrapper
+  background: #f6f6f6
+  min-height: 100%
+
+.content
+  max-width: 100%
+  margin: 0 auto
+  padding: 20px 20px 0 20px
+@media (min-width: 320px) and (max-width: 720px)
+  .content
+    padding: 0
+  .header 
+    flex-wrap: wrap
+    input
+      margin: 20px auto
+      min-width: 300px
+    .buttons
+      margin: 0 auto
+    .logo
+      .logoTitle
+        margin-left: 5px
+  .dashboard
+    flex-wrap: wrap
+    &__title
+
+    &__img
+      width: 170px
+      height: 70px
+      img
+        width: 100%!important
+        height: 100%!important
+  .main
+    display: flex
+    flex-wrap: wrap
+  .item
+    max-width: 250px
+    height: auto
+    margin-right: 0!important
+  .news
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__item
+    &__title
+    &__blocks
+      display: flex
+      flex-direction: column
+      align-items: center!important
+  .aside
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 30px 0 0 0
+  .searchFScrin
+    &__content
+      padding: 40px
+      div
+        input
+          width: 220px!important
+          margin: 30px 0 20px 0
+          padding: 10px 15px
+
+@media (min-width: 360px) and (max-width: 720px)
+  .content
+    padding: 20px 20px 0 20px
+  .item
+    min-width: 300px
+    &__img
+      min-width: 300px
+      min-height: 120px
+      img
+        min-width: 300px
+        min-height: 120px
+  .searchFScrin
+    &__content
+      padding: 40px
+      div
+        input
+          width: 260px!important
+          margin: 30px 0 20px 0
+          padding: 10px 15px
+
+@media (min-width: 480px) and (max-width: 720px)
+  .dashboard
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+
+@media (min-width: 567px) and (max-width: 720px)
+  .aside
+    flex-direction: column
+    align-self: center!important
+  .item
+    min-width: 250px
+    &__img
+      min-width: 250px
+      min-height: 100px
+      img
+        min-width: 250px
+        min-height: 100px
+  .main
+    padding: 10px
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    margin: 10px 0 40px 0
+  .news
+    &__blocks
+      flex-direction: row
+      flex-wrap: wrap!important
+      justify-content: space-around
+  .searchFScrin
+    &__content
+      padding: 40px
+      div
+        input
+          width: 470px!important
+          margin: 30px 0 20px 0
+          padding: 10px 15px
+@media (min-width: 721px) and (max-width: 800px)
+  .main
+    padding: 10px 10px!important
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+    flex-wrap: nowrap
+    margin: 10px 0 40px 0
+  .item
+    min-width: 350px
+    &__img
+      min-width: 350px
+      min-height: 150px
+      img
+        min-width: 350px
+        min-height: 150px
+  .searchFScrin
+    &__content
+      padding: 40px
+      div
+        input
+          width: 620px!important
+          margin: 30px 0 20px 0
+          padding: 10px 15px
+@media (min-width: 801px) and (max-width: 900px)
+  .main
+    padding: 10px 50px!important
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+    flex-wrap: nowrap
+    margin: 10px 0 40px 0
+  .item
+    min-width: 350px
+    &__img
+      min-width: 350px
+      min-height: 150px
+      img
+        min-width: 350px
+        min-height: 150px
+  .searchFScrin
+    &__content
+      padding: 40px
+      div
+        input
+          width: 707px!important
+          margin: 30px 0 20px 0
+          padding: 10px 15px
+
+.header
+  display: flex
+  justify-content: space-between
+  padding: 10px
+  background: #fff
+  align-items: center
+  border: 1px solid #fff
+  border-radius: 5px
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+.logo
+  display: flex
+  align-items: center
+  line-height: 1.2
+
+  .logoTitle
+    font-family: 'STIX Two Text', serif
+    font-size: 1.4em
+    padding: 5px
+    font-weight: bold
+
+.red
+  font-family: 'STIX Two Text', serif
+  color: #d60000
+  font-weight: bold
+
+.img
+  width: 60px
+  height: 60px
+  border-radius: 100%
+  border: 1px solid red
+  background-image: url(../img/icon-newspaper-13.jpg)
+  background-size: contain
+  transition: all 1s ease
+  &:hover
+    transform: rotate(360deg)
+
+.button
+  padding: 6px 10px
+  background: #f6f6f6
+  border-radius: 3px
+  border: 1px solid silver
+  transition: all .5s ease
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px
+  &:hover
+    background: #ffffff
+
+.search
+  padding: 6px 10px
+  background: white
+  border-radius: 3px
+  border: 1px solid silver
+
+.dashboard
+  border: 1px solid black
+  border-radius: 3px
+  min-height: 300px
+  background: #d60000
+  margin: 20px 0
+  padding: 25px
+  display: flex
+  justify-content: space-between
+  color: white
+
+.dashboard__title
+  display: flex
+  flex-direction: column
+  width: 400px
+  padding: 10px 0
+
+  div
+    font-size: 30px
+    line-height: 34px
+
+  p
+    line-height: 20px
+
+  button
+    align-self: start
+    border: 1px solid red
+    &:hover
+      background: #d60f00
+
+.dashboard__img
+  border: 5px solid white
+  width: 400px
+  height: 200px
+  img
+    width: 390px
+    height: 190px
+
+.dashboard
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+  p
+    margin: 20px 0
+
+  button
+    align-self: start
+    background: red
+    color: white
+
+.main
+  padding: 10px
+  display: flex
+  justify-content: space-between
+  margin: 10px 0 40px 0
+
+.aside
+  flex: 1 0 300px
+
+  &__title
+    font-weight: bold
+    font-size: 18px
+
+.news
+  flex: 1 1 auto
+
+  &__title
+    font-weight: bold
+    font-size: 18px
+
+  &__blocks
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    display: flex
+    flex-direction: column
+
+.item
+  max-width: 250px
+  height: auto
+  margin: 10px 20px 20px 0
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+  &__img
+    width: 250px
+    height: 100px
+    border-radius: 5px 5px 0 0
+    img
+      width: 250px
+      height: 100px
+      border-radius: 5px 5px 0 0
+
+  &__block
+    background: white
+    border: 1px solid silver
+    border-top: 0
+    border-radius: 0 0 5px 5px
+
+  &__title
+    padding: 10px
+    font-weight: bold
+
+  &__text
+    padding: 10px
+
+  &__button
+    align-self: start
+    margin: 10px
+    background: #ffd100
+    &:hover
+      background: #fdf100
+button.add
+  // margin: 0 0 0 25%
+  background: red
+  color: white
+  &:hover
+    background: #d60f00
+
+.aside
+  align-self: end
+
+  &__title
+
+  &__text
+    border: 1px solid white
+    border-radius: 5px
+    background-color: white
+    margin: 10px 0
+    padding: 10px
+    width: 300px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+  &__block
+    width: 300px
+    background-color: #009999b0
+    padding: 10px
+    border: 1px solid #009999b0
+    border-radius: 5px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+  &__img
+    border: 5px solid white
+    width: 280px
+    height: 100px
+    background-image: url('../img/1546853933.jpg')
+    background-size: 100%
+
+  &__subtext
+    margin: 20px 0
+    color: white
+
+  &__button
+    background: white
+
+.footer
+  background: #fff
+  text-align: center
+  border: 1px solid silver
+  border-bottom: 0
+  border-radius: 5px 5px 0 0
+  padding: 20px
+  font-weight: bold
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+.searchFScrin
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  background: rgba(192,192,192,0.9)
+  flex-direction: column
+  &__content
+    display: flex
+    flex-direction: column
+    margin: auto
+    h3
+      font-size: 24px
+      color: #d60000
+      font-weight: bold
+    div
+      position: relative
+      input
+        width: 800px
+        margin: 30px 0 20px 0
+      span
+        position: relative
+        right: 20px
+        cursor: pointer
+        i
+          color: rgba(0,0,0,0.8)
+    button
+      align-self: flex-start
+      background: #d60000
+      color: white
+      border: 1px solid #d60000
+      &:hover
+        background: #d61f0f
